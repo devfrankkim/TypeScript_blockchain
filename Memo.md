@@ -49,6 +49,13 @@
 - ts-node가 컴파일할 필요없이 타입스크립트 코드를 대신 실행시켜준다.
 - ts-node는 Node.js용 TypeScript 실행 엔진 및 REPL. JIT는 TypeScript를 JavaScript로 변환하므로 사전 컴파일 없이 Node.js에서 TypeScript를 직접 실행할 수 있다. https://www.npmjs.com/package/ts-node
 
+```js
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon --exec ts-node src/index.ts"
+  },
+```
+
 ### npm i nodemon
 
 - 자동으로 커맨드를 재실행시켜준다. auto refresh. 서버 kill할 필요없다.
